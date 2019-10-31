@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Summary</title>
+    <link href="../stylesheets/style.css" rel="stylesheet" />
+    <script src="../javascripts/script.js" defer></script>
+    <script src="../javascripts/summary.js" defer></script>
+</head>
+
+<body>
+    <div class="containerB">
+        <div>
+            <h1>Summary</h1>
+            <form action="/leaderboard">
+                <h3>
+                    Score:<input name="score" id="score" value=0>
+                </h3>
+                <input name="name" placeholder="Name" />
+                <Button type="submit">Submit</Button>
+            </form>
+            <Button onclick=resetTermination()>Restart</Button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+body {
+    background-image: url("../images/brownback.jpg");
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 55px 55px 55px 55px 55px;
+    grid-template-rows: 55px 55px 55px 55px 55px;
+    grid-gap: 9px;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    /* transform: translate(-50%, -50%); */
+    background-color: black;
+    border: 25px solid black;
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}   
+
+.containerB {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 55px 55px 55px 55px 55px;
+    grid-template-rows: 55px 55px 55px 55px 55px;
+    grid-gap: 9px;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    /* transform: translate(-50%, -50%); */
+    background-color: white;
+    border: 25px solid white;
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+} 
+
+#players {
+    width:500%;
+}
+
+.cell {
+    background-color: #8B4513;
+}
+
+.cellR {
+    background-color: #8B4513;
+}
+
+.cellB {
+    background-color: #8B4513;
+}
+
+.cell:hover {
+    background-color: rgb(190, 110, 44);
+}
+
+.turquoise {
+    -webkit-animation: flip-horizontal 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2 alternate;
+    animation: flip-horizontal 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2 alternate;
+}
+
+@-webkit-keyframes flip-horizontal{
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: turquoise;
+    }
+}
+
+@keyframes flip-horizontal {
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: turquoise;
+    }
+}
+
+.right {
+    -webkit-animation: flip-horizontal-green 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-horizontal-green 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-horizontal-green{
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: green;
+    }
+}
+
+@keyframes flip-horizontal-green {
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: green;
+    }
+}
+
+.wrong {
+    -webkit-animation: flip-horizontal-red 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-horizontal-red 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-horizontal-red{
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: red;
+    }
+}
+
+@keyframes flip-horizontal-red {
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: red;
+    }
+}
+
+.orange {
+    -webkit-animation: flip-horizontal-wrong 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-horizontal-wrong 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-horizontal-wrong{
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: orange;
+    }
+}
+
+@keyframes flip-horizontal-wrong {
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: orange;
+    }
+}
+
+.green {
+    -webkit-animation: flip-horizontal-right 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-horizontal-right 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes flip-horizontal-right{
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: greenyellow;
+    }
+}
+
+@keyframes flip-horizontal-right {
+    0% {
+        -webkit-transfrom: rotateX(0);
+        transform: rotateX(0);
+        background-color: #8B4513;
+    }
+    100% {
+        -webkit-transfrom: rotateX(180deg);
+        transform: rotateX(180deg);
+        background-color: greenyellow;
+    }
+}
+.rotate {
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+
+.rotate2 {
+    transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+}
+
+.Score {
+    height: 6%;
+    width: 12%;
+    left: 70%;
+    top: 1%;
+    position: absolute;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(177, 175, 175);
+    padding-left: 1%;
+}
+
+.Trial {
+    height: 6%;
+    width: 12%;
+    left: 55.5%;
+    top: 1%;
+    position: absolute;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(177, 175, 175);
+    padding-left: 1%;
+}
+
+.Tiles {
+    height: 6%;
+    width: 12%;
+    left: 41%;
+    top: 1%;
+    position: absolute;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(177, 175, 175);
+    padding-left: 1%;
+}
